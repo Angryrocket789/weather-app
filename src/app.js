@@ -35,8 +35,8 @@ app.get("", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Hello !@#",
-    name: "Help!Help!Help!Help!Help!",
+    title: "Help?",
+    name: "Fuck oFF",
   });
 });
 
@@ -75,7 +75,9 @@ app.get("/weather", (req, res) => {
             location: Location,
             foreCast: `It is currently ${
               data.temperature
-            } degrees. There is a ${data.precipitation * 100}% chance of rain`,
+            } degrees. There is a ${Math.round(
+              data.precipitation * 10
+            )}% chance of rain`,
           });
         }
       });
