@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 
-// console.log(__dirname);
+console.log(__dirname);
 // console.log(__filename);
 // console.log(path.join(__dirname, "../public"));
 
