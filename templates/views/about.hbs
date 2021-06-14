@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>To-do-list</title>
+  </head>
+  <body>
+    <section class="section--center">
+      <!-- Form -->
+      <form class="list-form">
+        <p class="alert">Note added by {{name}}</p>
+        <h3>To-Do-<span>List</span></h3>
+        <input type="text" id="input-1" placeholder="e.g. meet at 14:00" />
+        <button class="add">Add</button>
+      </form>
+      <div class="events--container">
+        <div class="event--list">
+          <!-- <article class="list-item article--1">
+            <label class="container">
+              <input type="checkbox" class="checkbox" id="1" name="checkbox" />
+              <hr class="line line--1" />
+              <p class="list-item--text">Feed your Dog !!</p>
+              <span class="checkmark"></span>
+            </label>
+            <div class="btn-container">
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button> -->
+          <!-- delete btn -->
+          <!-- <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div> -->
+          <!-- </article> -->
+        </div>
+        <button class="clear--btn">clear list</button>
+      </div>
+      {{>header}}
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
