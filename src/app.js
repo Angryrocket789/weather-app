@@ -73,11 +73,12 @@ app.get("/weather", (req, res) => {
         if (data !== undefined) {
           res.send({
             location: Location,
+            description: `It feels like ${data.description}`,
             foreCast: `It is currently ${
               data.temperature
             } degrees. There is a ${Math.round(
               data.precipitation * 10
-            )}% chance of rain`,
+            )}% chance of rain. Humidity is ${data.humidity}%`,
           });
         }
       });
