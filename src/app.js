@@ -35,15 +35,15 @@ app.get("", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help?",
-    name: "Fuck oFF",
+    title: "Help",
+    name: "",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "Hello brooooo",
-    name: "Romal B2",
+    title: "Hello",
+    name: "Romal",
   });
 });
 
